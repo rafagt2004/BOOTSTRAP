@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="carousel carousel-fade slide" data-bs-ride="carousel" id="carouselExample">
+        <div class="carousel-inner">
+            <div data-bs-interval="2000" class="carousel-item active">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/10/25/18/32/snow-landscape-8341054_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h5>Caption for Slide 1</h5>
+                    <p>Description for Slide 1</p>
+                </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2021/12/12/18/04/mountains-6865752_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h5>Caption for Slide 2</h5>
+                    <p>Description for Slide 2</p>
+                </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2025/04/14/18/05/mountain-9533968_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h5>Caption for Slide 3</h5>
+                    <p>Description for Slide 3</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
